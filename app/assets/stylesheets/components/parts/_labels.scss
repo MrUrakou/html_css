@@ -1,0 +1,56 @@
+.sectionLabel {
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  color: $color-main-text;
+  text-treansform: uppercase;
+  font-size: 22px;
+  line-hight: 1;
+
+  @include menu-font;
+
+  &::before,
+  &::after {
+  content: '';
+  display: block;
+  flex: 1 0 10%;
+  height: 0;
+  border-bottom: 1px solid $color-main-text;
+  }
+  &::before {
+    margin-right: 22px;
+  }
+  &::after {
+    margin-left: 22px;
+  }
+}
+// ロゴ
+.logo {
+  display: inline-block;
+  padding: 10px 0;
+  color: $color-main-text;
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 26px;
+  @include menu-font;
+}
+
+.articleLabelL {
+  padding: 0 0 20px;
+  font-weight: normal;
+  font-size: 34px;
+}
+
+.articleLabelM {
+  padding: 40px 0 20px;
+  font-weight: normal;
+  font-size: 26px;
+}
+
+.articleLabeS {
+  padding: 40px 0 20px;
+  font-weight: normal;
+  font-size: 26px;
+}
